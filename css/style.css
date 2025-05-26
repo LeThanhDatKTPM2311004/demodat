@@ -8,3 +8,89 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
 }
+a {
+  text-decoration: none;
+}
+.btn {
+  display: inline-block;
+  padding: 0px 16px;
+  border-radius: 24.5px;
+  background: #171100;
+  line-height: 50px;
+  min-width: 118px;
+  color: #fff;
+  text-align: center;
+  /* font-family: Poppins; */
+  font-size: 1.6rem;
+  /* font-style: normal; */
+  font-weight: 600;
+  /* line-height: 28px; 175% */
+}
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* code cho header */
+.header {
+  background-color: #fffcf4;
+  top: -28px;
+  /* 36-8 */
+}
+.header.fixed {
+  /* bám dính */
+  position: sticky;
+}
+.header .body {
+  /* căn giữa */
+  align-items: center;
+  display: flex;
+  padding: 36px 0px 8px;
+}
+.nav ul {
+  display: flex;
+}
+.nav {
+  margin-left: auto;
+}
+.nav a {
+  position: relative;
+  color: #171100;
+  /* text-align: center; có thể có hoặc không*/
+  /* font-family: Poppins;  */
+  /* đã có trong thẻ body */
+  font-size: 1.6rem;
+  /* quy đổi 16px thành rem */
+  /* font-style: normal; */
+  /* font-weight: 600;
+  line-height: 28px; 175% */
+  /* mặc định đã có r */
+  padding: 8px 21px;
+  /* kc giữa hai nút là 42 nên cách padding 21 */
+}
+.nav a:hover {
+  color: #171100;
+  text-shadow: 1px 0 0 currentColor;
+}
+.nav li.active a::after {
+  position: absolute;
+  left: 21px;
+  /* cách 6 ô trong figma = 6px */
+  bottom: 6px;
+  content: "";
+  width: 12px;
+  height: 2px;
+  /* flex-shrink: 0; */
+  border-radius: 1px;
+  background: #171100;
+  display: block;
+  /* cách 6 ô trong figma = 6px */
+}
+.btn-sign-up {
+  min-width: 144px;
+}
+.header .action {
+  margin-left: 49px;
+}
