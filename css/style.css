@@ -15,6 +15,14 @@ body {
 a {
   text-decoration: none;
 }
+.popular .course-item h3 {
+  color: #171100;
+  /* font-family: Poppins; */
+  font-size: 1.8rem;
+  /* font-style: normal; */
+  font-weight: 600;
+  line-height: 1.67; /* 166.667% */
+}
 .heading-lv2 {
   color: #171100;
   font-family: var(--primary-color);
@@ -49,7 +57,12 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 /* code cho header */
 .header {
   background-color: #fffcf4;
@@ -323,6 +336,7 @@ a {
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background: #fff;
+  flex: 1;
 }
 .popular .course-item:hover {
   border: 1px solid transparent;
@@ -382,4 +396,64 @@ font-weight: 400; */
 }
 .popular .course-item .btn-book:hover {
   background-color: var(--primary-color);
+}
+/* ====fed==== */
+.feedback {
+  margin-top: 135px;
+  padding: 96px 0px;
+  background-color: #2e2100;
+}
+.feedback-item {
+  display: flex;
+}
+.feedback-item .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.feedback-item .info .member-name {
+  margin-top: 18px;
+  color: #f7f7f7;
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  /* font-style: normal; */
+  font-weight: 700;
+  line-height: 1.42; /* 141.667% */
+}
+.feedback-item .info .desc {
+  margin-top: 4px;
+  color: #bfbcb2;
+  /* font-family: Poppins; */
+  font-size: 1.4rem;
+  /* font-style: normal;
+  font-weight: 400; */
+  line-height: 1.86; /* 185.714% */
+}
+.feedback-item .dots {
+  display: flex;
+  margin-top: 28px;
+}
+.feedback-item .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #634700;
+  cursor: pointer;
+}
+.feedback-item .content {
+  width: 66%;
+  margin-left: auto;
+}
+.feedback-item .dat {
+  color: #fff;
+  /* font-family: Poppins; */
+  font-size: 2.6rem;
+  font-style: italic;
+  /* font-weight: 400; */
+  line-height: 1.54; /* 153.846% */
+}
+.feedback-item .dot.active {
+  background-color: var(--primary-color);
+  cursor: default;
 }
