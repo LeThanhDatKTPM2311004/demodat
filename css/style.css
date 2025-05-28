@@ -345,7 +345,7 @@ a {
   box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
 }
 .popular .course-item .info {
-  pad: 16px 22px 22px;
+  padding: 16px 22px 22px;
 }
 .popular .course-item .foot,
 .popular .course-item .head,
@@ -404,7 +404,11 @@ font-weight: 400; */
   background-color: #2e2100;
 }
 .feedback-item {
+  width: 100%;
   display: flex;
+  flex-shrink: 0;
+  transform: translateX(-100%);
+  transition: all ease -0.5s;
 }
 .feedback-item .avatar {
   width: 72px;
@@ -456,4 +460,8 @@ font-weight: 400; */
 .feedback-item .dot.active {
   background-color: var(--primary-color);
   cursor: default;
+}
+.feedback-list {
+  display: flex;
+  overflow: hidden;
 }
